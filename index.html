@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meta Tag Omission Test</title>
+    </head>
+    <body>
+        <h1>Production Test: Missing Meta Tags</h1>
+
+        <p>This page intentionally does NOT include:</p>
+
+        <ul>
+            <li>meta charset="utf-8"</li>
+            <li>meta name="viewport"</li>
+        </ul>
+
+        <hr />
+
+        <h2>Text Encoding Test</h2>
+
+        <p>English text usually survives.</p>
+
+        <p>Accented characters: é ñ ü ç å</p>
+
+        <p>Non-Latin characters: 中文 日本語 한국어 العربية हिन्दी</p>
+
+        <p>Emoji test: 😀 🚀 🔥 💀</p>
+
+        <hr />
+
+        <h2>Layout & Scaling Test</h2>
+
+        <p>
+            On mobile devices, this page should appear zoomed out, requiring
+            pinch-to-zoom because no viewport is defined.
+        </p>
+
+        <div style="width: 800px">
+            <p>
+                This container is 800px wide. On mobile, it will overflow the
+                screen instead of reflowing.
+            </p>
+        </div>
+
+        <hr />
+
+        <h2>Form Input Test</h2>
+
+        <form>
+            <label>
+                Name:
+                <input type="text" />
+            </label>
+            <br /><br />
+            <label>
+                Message:
+                <textarea rows="4" cols="40"></textarea>
+            </label>
+            <br /><br />
+            <button type="submit">Submit</button>
+        </form>
+
+        <hr />
+
+        <p>Server time test string: 2025-01-01 12:00:00 UTC</p>
+
+        <p>Currency symbols: $ € £ ¥ ₿</p>
+
+        <hr />
+
+        <footer>
+            <p>Meta Tag Omission Experiment — Production Build</p>
+        </footer>
+    </body>
+</html>
